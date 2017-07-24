@@ -1,0 +1,6 @@
+framework module Pods_LZBSegmentBar_Example {
+  umbrella header "Pods-LZBSegmentBar_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

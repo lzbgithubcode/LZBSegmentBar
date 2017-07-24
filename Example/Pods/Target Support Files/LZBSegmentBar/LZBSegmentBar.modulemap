@@ -1,0 +1,6 @@
+framework module LZBSegmentBar {
+  umbrella header "LZBSegmentBar-umbrella.h"
+
+  export *
+  module * { export * }
+}
