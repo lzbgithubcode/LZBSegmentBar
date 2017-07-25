@@ -16,14 +16,14 @@
 * LZBContentView   滚动内容View
 
 ## <a id="How to use LZBSegmentBar"></a>How to use LZBSegmentBar
-* Installation with CocoaPods：`pod 'LZBSegmentBar'`
-* Manual import：
-* Drag All files in the `LZBSegmentBar` folder to project
+* 1.Installation with CocoaPods：`pod 'LZBSegmentBar'`
+* 
+* 2.Drag All files in the `LZBSegmentBar` folder to project
 * Import the main file：`#import "LZBPageView.h"`
 
 * More information of App can focus on：[摸着石头过河_崖边树](http://www.jianshu.com/u/268ed1ef819e)
 
-## <a id="使用示例"></a>使用示例
+## <a id="Example"></a>Example
 ```objc
 // 1.创建标题
 NSArray *titles = @[@"英雄联盟",@"火蓝",@"提姆队长",@"史前巨鳄",@"洛克萨斯之手",@"狗头",@"武器"];
@@ -53,8 +53,10 @@ NSArray *titles = @[@"英雄联盟",@"火蓝",@"提姆队长",@"史前巨鳄",@"
 ```
 
 
-## Author
-
+##  Contact Author
+If you have any good Suggestions or questions, please contact with mee
+QQ : 490658347
+简书：[摸着石头过河_崖边树](http://www.jianshu.com/u/268ed1ef819e)
 lzbgithubcode, 1835064412@qq.com
 
 ## License

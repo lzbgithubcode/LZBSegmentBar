@@ -48,7 +48,7 @@
     pageStyleModel.isScrollEnable = YES;
     pageStyleModel.isNeedScale = YES;
     pageStyleModel.isShowIndicatorLine = YES;
-    // pageStyleModel.isNeedMask = YES;
+   // pageStyleModel.isNeedMask = YES;
     
     //4.创建pageView
     LZBPageView *pageView = [[LZBPageView alloc]initWithFrame:pageFrame segmentConfig:pageStyleModel items:titles childVCs:self.childVcs parentVc:self];

@@ -24,6 +24,13 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C8F036F71F26EF3A00BDDB67 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C8F036EA1F26EF3A00BDDB67 /* .gitkeep */; };
+		C8F036F81F26EF3A00BDDB67 /* LZBContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F036EC1F26EF3A00BDDB67 /* LZBContentView.m */; };
+		C8F036F91F26EF3A00BDDB67 /* LZBPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F036EE1F26EF3A00BDDB67 /* LZBPageView.m */; };
+		C8F036FA1F26EF3A00BDDB67 /* LZBSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F036F01F26EF3A00BDDB67 /* LZBSegmentBar.m */; };
+		C8F036FB1F26EF3A00BDDB67 /* LZBSegmentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F036F21F26EF3A00BDDB67 /* LZBSegmentConfig.m */; };
+		C8F036FC1F26EF3A00BDDB67 /* UIColor+LZBSegmentColorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F036F41F26EF3A00BDDB67 /* UIColor+LZBSegmentColorExtension.m */; };
+		C8F036FD1F26EF3A00BDDB67 /* UIView+LZBSegmentFrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F036F61F26EF3A00BDDB67 /* UIView+LZBSegmentFrameLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +68,23 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		80C30536CB2C45EE23343E57 /* LZBSegmentBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LZBSegmentBar.podspec; path = ../LZBSegmentBar.podspec; sourceTree = "<group>"; };
+		80C30536CB2C45EE23343E57 /* LZBSegmentBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LZBSegmentBar.podspec; path = ../LZBSegmentBar.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3A6B4D8A37F94F5EDBCB8DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		AB1FEC49245C84D006E627AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A3A6B4D8A37F94F5EDBCB8DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AB1FEC49245C84D006E627AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C8F036EA1F26EF3A00BDDB67 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C8F036EB1F26EF3A00BDDB67 /* LZBContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBContentView.h; sourceTree = "<group>"; };
+		C8F036EC1F26EF3A00BDDB67 /* LZBContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBContentView.m; sourceTree = "<group>"; };
+		C8F036ED1F26EF3A00BDDB67 /* LZBPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBPageView.h; sourceTree = "<group>"; };
+		C8F036EE1F26EF3A00BDDB67 /* LZBPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBPageView.m; sourceTree = "<group>"; };
+		C8F036EF1F26EF3A00BDDB67 /* LZBSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBSegmentBar.h; sourceTree = "<group>"; };
+		C8F036F01F26EF3A00BDDB67 /* LZBSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBSegmentBar.m; sourceTree = "<group>"; };
+		C8F036F11F26EF3A00BDDB67 /* LZBSegmentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBSegmentConfig.h; sourceTree = "<group>"; };
+		C8F036F21F26EF3A00BDDB67 /* LZBSegmentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBSegmentConfig.m; sourceTree = "<group>"; };
+		C8F036F31F26EF3A00BDDB67 /* UIColor+LZBSegmentColorExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LZBSegmentColorExtension.h"; sourceTree = "<group>"; };
+		C8F036F41F26EF3A00BDDB67 /* UIColor+LZBSegmentColorExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LZBSegmentColorExtension.m"; sourceTree = "<group>"; };
+		C8F036F51F26EF3A00BDDB67 /* UIView+LZBSegmentFrameLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZBSegmentFrameLayout.h"; sourceTree = "<group>"; };
+		C8F036F61F26EF3A00BDDB67 /* UIView+LZBSegmentFrameLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZBSegmentFrameLayout.m"; sourceTree = "<group>"; };
 		CE04F827BF08840967534E73 /* Pods-LZBSegmentBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZBSegmentBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZBSegmentBar_Example/Pods-LZBSegmentBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D55F9F309B44FAF4B3BC20AC /* Pods_LZBSegmentBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZBSegmentBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,6 +152,7 @@
 		6003F593195388D20070C39A /* Example for LZBSegmentBar */ = {
 			isa = PBXGroup;
 			children = (
+				C8F036E91F26EF3A00BDDB67 /* LZBSegmentBar */,
 				6003F59C195388D20070C39A /* LZBAppDelegate.h */,
 				6003F59D195388D20070C39A /* LZBAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +215,26 @@
 				5C9CC5AA5C950D9C4EA1B2F0 /* Pods-LZBSegmentBar_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8F036E91F26EF3A00BDDB67 /* LZBSegmentBar */ = {
+			isa = PBXGroup;
+			children = (
+				C8F036EA1F26EF3A00BDDB67 /* .gitkeep */,
+				C8F036EB1F26EF3A00BDDB67 /* LZBContentView.h */,
+				C8F036EC1F26EF3A00BDDB67 /* LZBContentView.m */,
+				C8F036ED1F26EF3A00BDDB67 /* LZBPageView.h */,
+				C8F036EE1F26EF3A00BDDB67 /* LZBPageView.m */,
+				C8F036EF1F26EF3A00BDDB67 /* LZBSegmentBar.h */,
+				C8F036F01F26EF3A00BDDB67 /* LZBSegmentBar.m */,
+				C8F036F11F26EF3A00BDDB67 /* LZBSegmentConfig.h */,
+				C8F036F21F26EF3A00BDDB67 /* LZBSegmentConfig.m */,
+				C8F036F31F26EF3A00BDDB67 /* UIColor+LZBSegmentColorExtension.h */,
+				C8F036F41F26EF3A00BDDB67 /* UIColor+LZBSegmentColorExtension.m */,
+				C8F036F51F26EF3A00BDDB67 /* UIView+LZBSegmentFrameLayout.h */,
+				C8F036F61F26EF3A00BDDB67 /* UIView+LZBSegmentFrameLayout.m */,
+			);
+			path = LZBSegmentBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +322,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				C8F036F71F26EF3A00BDDB67 /* .gitkeep in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -395,8 +437,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* LZBAppDelegate.m in Sources */,
+				C8F036FA1F26EF3A00BDDB67 /* LZBSegmentBar.m in Sources */,
+				C8F036FB1F26EF3A00BDDB67 /* LZBSegmentConfig.m in Sources */,
+				C8F036FC1F26EF3A00BDDB67 /* UIColor+LZBSegmentColorExtension.m in Sources */,
 				6003F5A7195388D20070C39A /* LZBViewController.m in Sources */,
+				C8F036F91F26EF3A00BDDB67 /* LZBPageView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C8F036FD1F26EF3A00BDDB67 /* UIView+LZBSegmentFrameLayout.m in Sources */,
+				C8F036F81F26EF3A00BDDB67 /* LZBContentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
