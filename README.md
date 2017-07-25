@@ -8,6 +8,10 @@
 ## LZBSegmentBar
 
 * 类似与今日头条、网易新闻的选项卡
+* OC版本：当前为OC版本[OC版选项卡](https://github.com/lzbgithubcode/LZBSegmentBar)
+* swift版本：[Swift版选项卡](https://github.com/lzbgithubcode/LZBPageView)
+* 效果图
+![image](https://github.com/lzbgithubcode/LZBSegmentBar/raw/master/screenshotImage/LZBPageView.gif)
 
 ## Contents
 * LZBSegmentConfig  选项卡样式配置
@@ -15,9 +19,9 @@
 * LZBSegmentBar    选项卡Bar
 * LZBContentView   滚动内容View
 
+
 ## <a id="How to use LZBSegmentBar"></a>How to use LZBSegmentBar
 * 1.Installation with CocoaPods：`pod 'LZBSegmentBar'`
-* 
 * 2.Drag All files in the `LZBSegmentBar` folder to project
 * Import the main file：`#import "LZBPageView.h"`
 
@@ -54,10 +58,10 @@ NSArray *titles = @[@"英雄联盟",@"火蓝",@"提姆队长",@"史前巨鳄",@"
 
 
 ##  Contact Author
-If you have any good Suggestions or questions, please contact with mee
-QQ : 490658347
-简书：[摸着石头过河_崖边树](http://www.jianshu.com/u/268ed1ef819e)
-lzbgithubcode, 1835064412@qq.com
+If you have any good Suggestions or questions, please contact with me
+* QQ : 490658347
+* 简书：[摸着石头过河_崖边树](http://www.jianshu.com/u/268ed1ef819e)
+* email:1835064412@qq.com
 
 ## License
 
