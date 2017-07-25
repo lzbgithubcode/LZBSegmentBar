@@ -5,20 +5,53 @@
 [![License](https://img.shields.io/cocoapods/l/LZBSegmentBar.svg?style=flat)](http://cocoapods.org/pods/LZBSegmentBar)
 [![Platform](https://img.shields.io/cocoapods/p/LZBSegmentBar.svg?style=flat)](http://cocoapods.org/pods/LZBSegmentBar)
 
-## Example
+## LZBSegmentBar
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+* 类似与今日头条、网易新闻的选项卡
 
-## Requirements
+## Contents
+* LZBSegmentConfig  选项卡样式配置
+* LZBPageView    主View
+* LZBSegmentBar    选项卡Bar
+* LZBContentView   滚动内容View
 
-## Installation
+## <a id="How to use LZBSegmentBar"></a>How to use LZBSegmentBar
+* Installation with CocoaPods：`pod 'LZBSegmentBar'`
+* Manual import：
+* Drag All files in the `LZBSegmentBar` folder to project
+* Import the main file：`#import "LZBPageView.h"`
 
-LZBSegmentBar is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+* More information of App can focus on：[摸着石头过河_崖边树](http://www.jianshu.com/u/268ed1ef819e)
 
-```ruby
-pod "LZBSegmentBar"
+## <a id="使用示例"></a>使用示例
+```objc
+// 1.创建标题
+NSArray *titles = @[@"英雄联盟",@"火蓝",@"提姆队长",@"史前巨鳄",@"洛克萨斯之手",@"狗头",@"武器"];
+ //2.创建需要使用的控制器数组
+    for (NSInteger i = 0; i < titles.count; i++) {
+    UIViewController *vc = [[UIViewController alloc]init];
+    vc.view.backgroundColor = [UIColor getRandomColor];
+    UILabel *label = [UILabel new];
+    label.text = titles[i];
+    label.textColor = [UIColor blueColor];
+    label.center = CGPointMake(150, 200);
+    label.textAlignment = NSTextAlignmentCenter;
+    [label sizeToFit];
+    [vc.view addSubview:label];
+    [self.childVcs addObject:vc];
+    }
+// 3.创建选项卡配置样式
+    LZBSegmentConfig  *pageStyleModel = [LZBSegmentConfig defaultConfig];
+    pageStyleModel.isScrollEnable = YES;  //是否可以滚动
+    pageStyleModel.isNeedScale = YES;    //是否需要放大
+    pageStyleModel.isShowIndicatorLine = YES;  //是否需要下划线
+   // pageStyleModel.isNeedMask = YES;   //是否需要遮罩
+// 4.创建pageView，增加到父类View，可以使用
+    LZBPageView *pageView = [[LZBPageView alloc]initWithFrame:pageFrame segmentConfig:pageStyleModel items:titles childVCs:self.childVcs parentVc:self];
+    self.pageView = pageView;
+    [self.view addSubview:pageView];
 ```
+
 
 ## Author
 
