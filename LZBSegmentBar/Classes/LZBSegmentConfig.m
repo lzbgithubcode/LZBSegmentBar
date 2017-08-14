@@ -34,6 +34,8 @@
     config.maskColor = [UIColor colorWithWhite:0.4 alpha:0.5];
     config.maskLayerRadius = config.maskHeight *0.5;
     config.maskInsetMargin = 10;
+    config.isSegementInNavigationBar = NO;
+    config.isContainNavigationBar = NO;
     return config;
     
 }

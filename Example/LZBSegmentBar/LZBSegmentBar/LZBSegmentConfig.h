@@ -21,6 +21,21 @@
 + (instancetype)defaultConfig;
 
 /**
+ 选项卡是不是在导航条上，如果是，就自定义
+ */
+@property (nonatomic, assign)  BOOL isSegementInNavigationBar;
+/**
+ 是否包含导航条，如果isSegementInNavigationBar 设置，isContainNavigationBar一定等于YES
+ */
+@property (nonatomic, assign)  BOOL isContainNavigationBar;
+
+/**
+ 选项卡宽度， isSegementInNavigationBar = yes 有效
+ */
+@property (nonatomic, assign)  CGFloat segmentBarWidth;
+
+
+/**
   标题栏默认高度 44
  */
 @property (nonatomic, assign) CGFloat segmentBarHeight;

@@ -24,6 +24,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C84EF5E81F414F9200ACD90A /* LZBSegmentBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84EF5E71F414F9200ACD90A /* LZBSegmentBarViewController.m */; };
+		C84EF5F01F418E9A00ACD90A /* LZBTestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84EF5EF1F418E9A00ACD90A /* LZBTestOneVC.m */; };
+		C84EF5F31F418EAA00ACD90A /* LZBTestTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84EF5F21F418EAA00ACD90A /* LZBTestTwoVC.m */; };
 		C8F036F71F26EF3A00BDDB67 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C8F036EA1F26EF3A00BDDB67 /* .gitkeep */; };
 		C8F036F81F26EF3A00BDDB67 /* LZBContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F036EC1F26EF3A00BDDB67 /* LZBContentView.m */; };
 		C8F036F91F26EF3A00BDDB67 /* LZBPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F036EE1F26EF3A00BDDB67 /* LZBPageView.m */; };
@@ -72,6 +75,12 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3A6B4D8A37F94F5EDBCB8DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AB1FEC49245C84D006E627AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C84EF5E61F414F9200ACD90A /* LZBSegmentBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBSegmentBarViewController.h; sourceTree = "<group>"; };
+		C84EF5E71F414F9200ACD90A /* LZBSegmentBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBSegmentBarViewController.m; sourceTree = "<group>"; };
+		C84EF5EE1F418E9A00ACD90A /* LZBTestOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBTestOneVC.h; sourceTree = "<group>"; };
+		C84EF5EF1F418E9A00ACD90A /* LZBTestOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBTestOneVC.m; sourceTree = "<group>"; };
+		C84EF5F11F418EAA00ACD90A /* LZBTestTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBTestTwoVC.h; sourceTree = "<group>"; };
+		C84EF5F21F418EAA00ACD90A /* LZBTestTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBTestTwoVC.m; sourceTree = "<group>"; };
 		C8F036EA1F26EF3A00BDDB67 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		C8F036EB1F26EF3A00BDDB67 /* LZBContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBContentView.h; sourceTree = "<group>"; };
 		C8F036EC1F26EF3A00BDDB67 /* LZBContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBContentView.m; sourceTree = "<group>"; };
@@ -158,6 +167,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LZBViewController.h */,
 				6003F5A6195388D20070C39A /* LZBViewController.m */,
+				C84EF5EE1F418E9A00ACD90A /* LZBTestOneVC.h */,
+				C84EF5EF1F418E9A00ACD90A /* LZBTestOneVC.m */,
+				C84EF5F11F418EAA00ACD90A /* LZBTestTwoVC.h */,
+				C84EF5F21F418EAA00ACD90A /* LZBTestTwoVC.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -221,10 +234,12 @@
 			isa = PBXGroup;
 			children = (
 				C8F036EA1F26EF3A00BDDB67 /* .gitkeep */,
-				C8F036EB1F26EF3A00BDDB67 /* LZBContentView.h */,
-				C8F036EC1F26EF3A00BDDB67 /* LZBContentView.m */,
 				C8F036ED1F26EF3A00BDDB67 /* LZBPageView.h */,
 				C8F036EE1F26EF3A00BDDB67 /* LZBPageView.m */,
+				C84EF5E61F414F9200ACD90A /* LZBSegmentBarViewController.h */,
+				C84EF5E71F414F9200ACD90A /* LZBSegmentBarViewController.m */,
+				C8F036EB1F26EF3A00BDDB67 /* LZBContentView.h */,
+				C8F036EC1F26EF3A00BDDB67 /* LZBContentView.m */,
 				C8F036EF1F26EF3A00BDDB67 /* LZBSegmentBar.h */,
 				C8F036F01F26EF3A00BDDB67 /* LZBSegmentBar.m */,
 				C8F036F11F26EF3A00BDDB67 /* LZBSegmentConfig.h */,
@@ -436,15 +451,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84EF5F31F418EAA00ACD90A /* LZBTestTwoVC.m in Sources */,
 				6003F59E195388D20070C39A /* LZBAppDelegate.m in Sources */,
 				C8F036FA1F26EF3A00BDDB67 /* LZBSegmentBar.m in Sources */,
 				C8F036FB1F26EF3A00BDDB67 /* LZBSegmentConfig.m in Sources */,
 				C8F036FC1F26EF3A00BDDB67 /* UIColor+LZBSegmentColorExtension.m in Sources */,
 				6003F5A7195388D20070C39A /* LZBViewController.m in Sources */,
+				C84EF5E81F414F9200ACD90A /* LZBSegmentBarViewController.m in Sources */,
 				C8F036F91F26EF3A00BDDB67 /* LZBPageView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				C8F036FD1F26EF3A00BDDB67 /* UIView+LZBSegmentFrameLayout.m in Sources */,
 				C8F036F81F26EF3A00BDDB67 /* LZBContentView.m in Sources */,
+				C84EF5F01F418E9A00ACD90A /* LZBTestOneVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

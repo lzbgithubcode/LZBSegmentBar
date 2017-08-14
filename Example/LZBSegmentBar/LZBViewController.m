@@ -10,6 +10,8 @@
 #import "LZBPageView.h"
 #import "UIView+LZBSegmentFrameLayout.h"
 #import "UIColor+LZBSegmentColorExtension.h"
+#import "LZBTestTwoVC.h"
+#import "LZBTestOneVC.h"
 
 @interface LZBViewController ()
 
@@ -56,6 +58,25 @@
     
     [self.view addSubview:pageView];
     
+    [self setupNavitionBar];
+    
+}
+
+- (void)setupNavitionBar
+{
+    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc]initWithTitle:@"右边" style:UIBarButtonItemStylePlain target:self action:@selector(gotoNextViewController)]];
+    [self.navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc]initWithTitle:@"左边" style:UIBarButtonItemStylePlain target:self action:@selector(gotoLastViewController)]];
+}
+
+- (void)gotoNextViewController
+{
+    [self.navigationController pushViewController:[[LZBTestTwoVC alloc]init] animated:YES];
+}
+
+- (void)gotoLastViewController
+{
+    
+    [self.navigationController pushViewController:[[LZBTestOneVC alloc]init] animated:YES];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
