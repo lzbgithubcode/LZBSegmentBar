@@ -27,4 +27,11 @@
  @return 控制器
  */
 - (instancetype)initWithSegmentConfig:(LZBSegmentConfig *)config items:(NSArray<NSString *> *)items childVCs:(NSArray<UIViewController *> *)childVCs;
+
+/**
+ 更新frame
+ 
+ @param udpateFrame 设置更新frame
+ */
+- (void)updateFrameWithLayoutSubViews:(CGRect)udpateFrame;
 @end

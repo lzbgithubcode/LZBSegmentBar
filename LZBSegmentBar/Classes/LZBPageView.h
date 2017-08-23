@@ -35,4 +35,12 @@
  @param defautIndex    默认选中索引
  */
 - (void)setPageViewDidSelectIndex:(NSInteger)defautIndex;
+
+
+/**
+ 更新frame
+ 
+ @param udpateFrame 设置更新frame
+ */
+- (void)updateFrameWithLayoutSubViews:(CGRect)udpateFrame;
 @end

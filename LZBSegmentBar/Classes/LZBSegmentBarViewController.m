@@ -73,6 +73,15 @@
      self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
+
+- (void)updateFrameWithLayoutSubViews:(CGRect)udpateFrame
+{
+    self.view.frame = udpateFrame;
+    [self.view setNeedsLayout];
+    [self.view layoutIfNeeded];
+    
+}
+
 - (void)viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];
@@ -81,7 +90,7 @@
         self.segmentBar.frame = self.segmentBarFrame;
         self.contentViewFrame = CGRectMake(0, CGRectGetMaxY(self.segmentBarFrame), self.view.bounds.size.width, self.view.bounds.size.height-CGRectGetMaxY(self.segmentBarFrame));
         self.contentView.frame = self.contentViewFrame;
-        [self.contentView setNeedsLayout];
+         [self.contentView updateFrameWithLayoutSubViews:self.contentViewFrame];
         return;
     }
     

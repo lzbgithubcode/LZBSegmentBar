@@ -52,6 +52,18 @@ static NSString *kLZBContentViewCellID = @"kLZBContentViewCellID";
     [self addSubview:self.collectionView];
 }
 
+//更新frame
+- (void)updateFrameWithLayoutSubViews:(CGRect)udpateFrame
+{
+    self.frame =udpateFrame;
+    self.collectionView.frame = self.bounds;
+    self.flowLayout.itemSize = self.bounds.size;
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+    [self.collectionView setNeedsLayout];
+    [self.collectionView layoutIfNeeded];
+}
+
 
 #pragma mark - handel
 - (void)segmentDidSelectTargetIndex:(NSInteger)targetIndex
