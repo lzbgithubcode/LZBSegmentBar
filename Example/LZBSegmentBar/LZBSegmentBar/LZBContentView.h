@@ -65,4 +65,12 @@
  @param targetIndex 目标选中index
  */
 - (void)segmentDidSelectTargetIndex:(NSInteger)targetIndex;
+
+
+/**
+ 更新frame
+ 
+ @param udpateFrame 设置更新frame
+ */
+- (void)updateFrameWithLayoutSubViews:(CGRect)udpateFrame;
 @end

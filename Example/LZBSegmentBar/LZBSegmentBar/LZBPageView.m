@@ -52,6 +52,21 @@
 }
 
 
+- (void)updateFrameWithLayoutSubViews:(CGRect)udpateFrame
+{
+    self.frame = udpateFrame;
+    CGFloat contentViewFrameX = 0;
+    CGFloat contentViewFrameY = CGRectGetMaxY(self.segmentBarFrame);
+    CGFloat contentViewFrameW = self.bounds.size.width;
+    CGFloat contentViewFrameH =  self.bounds.size.height - CGRectGetMaxY(self.segmentBarFrame);
+    CGRect contentViewFrame = CGRectMake(contentViewFrameX, contentViewFrameY, contentViewFrameW, contentViewFrameH);
+    self.contentViewFrame = contentViewFrame;
+    self.contentView.frame = self.contentViewFrame;
+    [self.contentView updateFrameWithLayoutSubViews:self.contentViewFrame];
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
 #pragma mark- pravite
 
 - (void)setupUI
