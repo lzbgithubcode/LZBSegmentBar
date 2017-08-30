@@ -31,8 +31,6 @@
     [self addChildViewController:self.segmentBarVC];
     [self.view addSubview:self.segmentBarVC.view];
     self.segmentBarVC.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
-    
-    
 }
 
 

@@ -40,8 +40,6 @@
     
     // 2. 设置控制器内容视图
     self.segmentBarVC.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
-    
-    
 }
 
 
