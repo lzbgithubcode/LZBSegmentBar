@@ -11,6 +11,7 @@
 * OC版本：当前为OC版本[OC版选项卡](https://github.com/lzbgithubcode/LZBSegmentBar)
 * swift版本：[Swift版选项卡](https://github.com/lzbgithubcode/LZBPageView)
 * 效果图
+
 ![image](https://github.com/lzbgithubcode/LZBSegmentBar/raw/master/screenshotImage/LZBPageView.gif)
 
 ![image](https://github.com/lzbgithubcode/LZBSegmentBar/raw/master/screenshotImage/LZBPageViewContent.gif)
