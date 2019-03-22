@@ -306,11 +306,12 @@
     
     CGFloat deltaWidth = targeButton.frame.size.width - soureButton.frame.size.width;
     CGFloat deltaX = targeButton.frame.origin.x - soureButton.frame.origin.x;
+    CGFloat deltaCenterX = targeButton.center.x -soureButton.center.x;
     //3.拖动contentView,下划线渐变
     if (self.config.isShowIndicatorLine) {
         if(self.config.allowIndicatorLineWidth){
             CGPoint centerPoint = self.indicatorLine.center;
-            centerPoint.x = soureButton.center.x + deltaX * progress;
+            centerPoint.x = soureButton.center.x + deltaCenterX * progress;
             self.indicatorLine.center = centerPoint;
         }else{
             CGRect frame = self.indicatorLine.frame;

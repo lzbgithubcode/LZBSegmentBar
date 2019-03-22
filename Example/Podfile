@@ -1,5 +1,5 @@
 use_frameworks!
-
+source 'https://github.com/CocoaPods/Specs.git'
 target 'LZBSegmentBar_Example' do
   pod 'LZBSegmentBar', :path => '../'
 

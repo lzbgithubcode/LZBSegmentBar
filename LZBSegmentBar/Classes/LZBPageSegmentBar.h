@@ -12,7 +12,7 @@
 
 #endif /* LZBPageSegmentBar_h */
 
-#if __has_include(<LZBPageSegmentBar/LZBPageSegmentBar.h>)
+#if __has_include(<LZBPageSegmentBar.h>)
 
 #import <ZBCategories/LZBContentView.h>
 #import <ZBCategories/LZBPageView.h>
