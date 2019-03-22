@@ -35,6 +35,7 @@
  */
 @property (nonatomic, assign)  CGFloat segmentBarWidth;
 
+
 /**
   标题栏默认高度 44
  */
@@ -71,9 +72,18 @@
 
 
 /**
-   是否显示底部线
+   是否显示底部线 YES
  */
 @property (nonatomic, assign) BOOL isShowIndicatorLine;
+
+/**
+ 底部线是否允许设置宽度 默认是NO isShowIndicatorLine =YES有效
+ */
+@property (nonatomic, assign) BOOL allowIndicatorLineWidth;
+/**
+ 底部线的默认宽度  默认30.0 isShowIndicatorLine =YES allowIndicatorLineWidth =YES有效
+ */
+@property (nonatomic, assign) CGFloat indicatorLineWidth;
 
 /**
   底部线的默认高度 2.0 isShowIndicatorLine =YES有效
@@ -84,6 +94,17 @@
  底部线默认颜色 isShowIndicatorLine =YES有效
  */
 @property (nonatomic, strong) UIColor *indicatorColor;
+
+
+/**
+ 是否显示底部分割线 默认YES
+ */
+@property (nonatomic, assign) BOOL isShowSeparatorLine;
+
+/**
+ 分割线默认颜色 isShowSeparatorLine =YES有效
+ */
+@property (nonatomic, strong) UIColor *separatorLineColor;
 
 
 

@@ -11,8 +11,10 @@
 #endif
 
 #import "LZBContentView.h"
+#import "LZBPageSegmentBar.h"
 #import "LZBPageView.h"
 #import "LZBSegmentBar.h"
+#import "LZBSegmentBarViewController.h"
 #import "LZBSegmentConfig.h"
 #import "UIColor+LZBSegmentColorExtension.h"
 #import "UIView+LZBSegmentFrameLayout.h"

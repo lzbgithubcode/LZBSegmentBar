@@ -23,10 +23,17 @@
     config.itemNormalColor = [UIColor blackColor];
     config.itemSelectColor = [UIColor redColor];
     config.itemFont = [UIFont systemFontOfSize:14.0];
-    config.isScrollEnable = YES;
+    config.isScrollEnable = NO;
     config.isShowIndicatorLine = YES;
     config.indicatorLineHeight = 2;
+    config.allowIndicatorLineWidth = NO;
+    config.indicatorLineWidth = 30.0;
     config.indicatorColor = [UIColor redColor];
+    
+    config.isShowSeparatorLine = YES;
+    config.separatorLineColor = [UIColor lightGrayColor];
+
+    
     config.isNeedScale = NO;
     config.maxScale = 1.2;
     config.isNeedMask = NO;

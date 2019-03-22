@@ -20,6 +20,7 @@
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIView *indicatorLine;
+@property (nonatomic, strong) UIView *separatorLine;
 @property (nonatomic, strong) UIView *buttonMaskView;
 @property (nonatomic, strong) NSMutableArray <UIButton *> *titleButtons;
 
@@ -57,6 +58,23 @@
     if(self.config.isNeedMask){
         [self setupMaskView];
     }
+    
+    if(self.config.isShowSeparatorLine){
+        [self setupInitSeparatorLine];
+    }
+    
+}
+
+// 分割线
+- (void)setupInitSeparatorLine
+{
+    [self addSubview:self.separatorLine];
+    CGFloat separatorLineW = self.bounds.size.width;
+    CGFloat separatorLineH = 0.5;
+    CGFloat separatorLineX = 0;
+    CGFloat separatorLineY = self.bounds.size.height - separatorLineH;
+    self.separatorLine.frame = CGRectMake(separatorLineX, separatorLineY, separatorLineW, separatorLineH);
+    
     
 }
 
@@ -121,12 +139,18 @@
     [self.scrollView addSubview:self.indicatorLine];
     UIButton *titleButton = self.titleButtons.firstObject;
     if(titleButton == nil) return;
-    self.indicatorLine.frame = titleButton.frame;
-    CGRect frame = self.indicatorLine.frame;
-    frame.size.height = self.config.indicatorLineHeight;
-    frame.origin.y = self.bounds.size.height - frame.size.height;
-    self.indicatorLine.frame = frame;
-    
+    if(self.config.allowIndicatorLineWidth){
+        self.indicatorLine.bounds = CGRectMake(0, 0, self.config.indicatorLineWidth, self.config.indicatorLineHeight);
+        CGPoint centerPoint = titleButton.center;
+        centerPoint.y = self.bounds.size.height - self.indicatorLine.bounds.size.height-self.indicatorLine.bounds.size.height *0.5;
+        self.indicatorLine.center= centerPoint;
+    }else{
+        self.indicatorLine.frame = titleButton.frame;
+        CGRect frame = self.indicatorLine.frame;
+        frame.size.height = self.config.indicatorLineHeight;
+        frame.origin.y = self.bounds.size.height - frame.size.height;
+        self.indicatorLine.frame = frame;
+    }
 }
 
 - (void)setupMaskView{
@@ -181,12 +205,20 @@
     //5.点击滚动下滑线
     if(self.config.isShowIndicatorLine)
     {
-        [UIView animateWithDuration:0.25 animations:^{
-            CGRect frame = self.indicatorLine.frame;
-            frame.origin.x = targertButton.frame.origin.x;
-            frame.size.width = targertButton.frame.size.width;
-            self.indicatorLine.frame = frame;
-        }];
+        if(self.config.allowIndicatorLineWidth){
+            [UIView animateWithDuration:0.25 animations:^{
+                CGPoint centerPoint = self.indicatorLine.center;
+                centerPoint.x = targertButton.center.x;
+                self.indicatorLine.center = centerPoint;
+            }];
+        }else{
+            [UIView animateWithDuration:0.25 animations:^{
+                CGRect frame = self.indicatorLine.frame;
+                frame.origin.x = targertButton.frame.origin.x;
+                frame.size.width = targertButton.frame.size.width;
+                self.indicatorLine.frame = frame;
+            }];
+        }
     }
     
     //6.点击放大字体
@@ -276,10 +308,17 @@
     CGFloat deltaX = targeButton.frame.origin.x - soureButton.frame.origin.x;
     //3.拖动contentView,下划线渐变
     if (self.config.isShowIndicatorLine) {
-        CGRect frame = self.indicatorLine.frame;
-        frame.size.width = soureButton.frame.size.width + deltaWidth * progress;
-        frame.origin.x = soureButton.frame.origin.x + deltaX * progress;
-        self.indicatorLine.frame = frame;
+        if(self.config.allowIndicatorLineWidth){
+            CGPoint centerPoint = self.indicatorLine.center;
+            centerPoint.x = soureButton.center.x + deltaX * progress;
+            self.indicatorLine.center = centerPoint;
+        }else{
+            CGRect frame = self.indicatorLine.frame;
+            frame.size.width = soureButton.frame.size.width + deltaWidth * progress;
+            frame.origin.x = soureButton.frame.origin.x + deltaX * progress;
+            self.indicatorLine.frame = frame;
+        }
+       
     }
     
     //4.拖动contenView，mask渐变
@@ -358,6 +397,14 @@
        _titleButtons = [NSMutableArray array];
    }
     return _titleButtons;
+}
+- (UIView *)separatorLine
+{
+    if(!_separatorLine){
+        _separatorLine = [[UIView alloc]init];
+        _separatorLine.backgroundColor = self.config.separatorLineColor;
+    }
+    return _separatorLine;
 }
 
 @end

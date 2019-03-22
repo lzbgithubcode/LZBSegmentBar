@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LZBSegmentBar'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.summary          = 'LZBSegmentBar.'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LZBSegmentBar/Classes/**/*'
-  
+  s.source_files = 'LZBSegmentBar/Classes/**/*.{h,m}'
+
   # s.resource_bundles = {
   #   'LZBSegmentBar' => ['LZBSegmentBar/Assets/*.png']
   # }
