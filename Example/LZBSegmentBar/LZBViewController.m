@@ -12,7 +12,6 @@
 #import "UIColor+LZBSegmentColorExtension.h"
 #import "LZBTestTwoVC.h"
 #import "LZBTestOneVC.h"
-#import "LZBPageSegmentBar.h"
 @interface LZBViewController ()
 
 @property (nonatomic, strong) NSMutableArray *childVcs;

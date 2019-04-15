@@ -11,7 +11,6 @@
 #endif
 
 #import "LZBContentView.h"
-#import "LZBPageSegmentBar.h"
 #import "LZBPageView.h"
 #import "LZBSegmentBar.h"
 #import "LZBSegmentBarViewController.h"
