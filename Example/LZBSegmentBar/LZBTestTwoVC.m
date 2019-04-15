@@ -7,7 +7,7 @@
 //
 
 #import "LZBTestTwoVC.h"
-#import <LZBSegmentBar/LZBSegmentBarViewController.h>
+#import "LZBSegmentBarViewController.h"
 #import "UIColor+LZBSegmentColorExtension.h"
 
 @interface LZBTestTwoVC ()
@@ -57,7 +57,7 @@
         vc2.view.backgroundColor = [UIColor getRandomColor];
         vc3.view.backgroundColor = [UIColor getRandomColor];
 
-        LZBSegmentBarViewController *segmentBarVC = [[LZBSegmentBarViewController alloc]initWithSegmentConfig:pageStyleModel items:@[@"微信", @"QQ", @"支护宝"] childVCs:@[vc1, vc2, vc3]];
+        LZBSegmentBarViewController *segmentBarVC = [[LZBSegmentBarViewController alloc]initWithSegmentConfig:pageStyleModel items:@[@"微信", @"QQ", @"支付宝"] childVCs:@[vc1, vc2, vc3]];
         _segmentBarVC = segmentBarVC;
     }
     return _segmentBarVC;

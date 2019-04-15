@@ -34,7 +34,7 @@
     [self.view addSubview:self.segmentBarVC.view];
     
     // 1. 设置导航栏背景颜色, 以及titleView内容视图
-    self.navigationController.navigationBar.backgroundColor = [UIColor grayColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
     self.segmentBarVC.segmentBar.frame = CGRectMake(0, 0, self.config.segmentBarWidth, self.config.segmentBarHeight);
     self.navigationItem.titleView = self.segmentBarVC.segmentBar;
     

@@ -75,7 +75,7 @@
     CGRect segmentBarFrame = CGRectMake(0, 0, self.bounds.size.width, self.config.segmentBarHeight);
     self.segmentBarFrame = segmentBarFrame;
     self.segmentBar.frame = segmentBarFrame;
-    self.segmentBar.backgroundColor = [UIColor orangeColor];
+    self.segmentBar.backgroundColor = [UIColor whiteColor];
     [self addSubview:self.segmentBar];
     
     //2.创建内容
