@@ -1,6 +1,6 @@
 {
   "name": "LZBSegmentBar",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "summary": "LZBSegmentBar",
   "description": "高仿今日头条选项卡LZBSegmentBar.",
   "homepage": "https://github.com/lzbgithubcode/LZBSegmentBar",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/lzbgithubcode/LZBSegmentBar.git",
-    "tag": "0.2.6"
+    "tag": "0.2.7"
   },
   "platforms": {
     "ios": "8.0"

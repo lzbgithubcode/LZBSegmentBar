@@ -14,13 +14,13 @@
 
 #if __has_include(<LZBPageSegmentBar.h>)
 
-#import <ZBCategories/LZBContentView.h>
-#import <ZBCategories/LZBPageView.h>
-#import <ZBCategories/LZBSegmentBar.h>
-#import <ZBCategories/LZBSegmentBarViewController.h>
-#import <ZBCategories/LZBSegmentConfig.h>
-#import <ZBCategories/UIColor+LZBSegmentColorExtension.h>
-#import <ZBCategories/UIView+LZBSegmentFrameLayout.h>
+#import <LZBPageSegmentBar/LZBContentView.h>
+#import <LZBPageSegmentBar/LZBPageView.h>
+#import <LZBPageSegmentBar/LZBSegmentBar.h>
+#import <LZBPageSegmentBar/LZBSegmentBarViewController.h>
+#import <LZBPageSegmentBar/LZBSegmentConfig.h>
+#import <LZBPageSegmentBar/UIColor+LZBSegmentColorExtension.h>
+#import <LZBPageSegmentBar/UIView+LZBSegmentFrameLayout.h>
 #else
 
 #import "LZBContentView.h"

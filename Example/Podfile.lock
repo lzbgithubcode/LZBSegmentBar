@@ -1,5 +1,5 @@
 PODS:
-  - LZBSegmentBar (0.2.6)
+  - LZBSegmentBar (0.2.7)
 
 DEPENDENCIES:
   - LZBSegmentBar (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LZBSegmentBar: ca676bf1c65446b692cef8931a3a98c8e7051f56
+  LZBSegmentBar: 34f31da8b1c6b68cde72accd2106baa3e5fba73d
 
 PODFILE CHECKSUM: ffe09538a4a0d52f40d8fa5be6d2923ec9cb05a1
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
