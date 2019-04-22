@@ -12,9 +12,19 @@
 
 #import <UIKit/UIKit.h>
 #import "LZBSegmentConfig.h"
+@class LZBPageView;
+
+@protocol LZBPageViewDelegate <NSObject>
+
+@optional
+- (void)pageView: (LZBPageView *)pageView didSelectIndex:(NSInteger)index;
+@end
 
 @interface LZBPageView : UIView
-
+/**
+  代理
+ */
+@property (nonatomic, weak) id <LZBPageViewDelegate>delegate;
 
 /**
   初始化页面信息

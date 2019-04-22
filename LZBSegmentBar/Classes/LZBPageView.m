@@ -96,11 +96,17 @@
 - (void)segmentBar: (LZBSegmentBar *)segmentBar didSelectIndex: (NSInteger)toIndex
 {
     [self.contentView segmentDidSelectTargetIndex:toIndex];
+    if([self.delegate respondsToSelector:@selector(pageView:didSelectIndex:)]){
+        [self.delegate pageView:self didSelectIndex:toIndex];
+    }
 }
 
 - (void)conentView:(LZBContentView *)contenView didScrollEndIndex:(NSInteger)index
 {
     [self.segmentBar contentViewDidScrollEndIndex:index];
+    if([self.delegate respondsToSelector:@selector(pageView:didSelectIndex:)]){
+        [self.delegate pageView:self didSelectIndex:index];
+    }
 }
 
 - (void)conentView:(LZBContentView *)contenView sourceIndex:(NSInteger)sourceIndex targetIndex:(NSInteger)targetIndex progress:(CGFloat)progress
